@@ -1,0 +1,54 @@
+%!TEX program=xelatex+makeindex+bibtex
+% Include all project wide packages here.
+\usepackage{fullpage}
+\usepackage{polyglossia}
+\setmainlanguage{english}
+\usepackage{csquotes}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{pdfpages}
+\usepackage{caption}
+\usepackage[list=true]{subcaption}
+\usepackage{float}
+\usepackage{standalone}
+\usepackage{import}
+\usepackage{tocloft}
+\usepackage{wrapfig}
+\usepackage{authblk}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage[toc,page,title,titletoc]{appendix}
+\usepackage{xunicode}
+\usepackage{fontspec}
+\usepackage{pgfplots}
+\usepackage{SIunitx}
+\usepackage{units}
+\pgfplotsset{compat=newest}
+\pgfplotsset{plot coordinates/math parser=false}
+\newlength\figureheight 
+\newlength\figurewidth
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{unicode-math}
+\usepackage{rotating}
+\usepackage[europeanresistors,americaninductors]{circuitikz}
+\usepackage[
+    backend=bibtexu,
+	texencoding=utf8,
+bibencoding=utf8,
+    style=ieee,
+    sortlocale=en_US,
+    language=auto
+]{biblatex}
+\usepackage{listings}
+\newcommand{\includecode}[4][c]{\lstinputlisting[caption=#2, escapechar=, style=#1,label=#4]{#3}}
+\newcommand{\superscript}[1]{\ensuremath{^{\textrm{#1}}}}
+\newcommand{\subscript}[1]{\ensuremath{_{\textrm{#1}}}}
+
+
+\newcommand{\chapternumber}{\thechapter}
+\renewcommand{\appendixname}{Appendix}
+\renewcommand{\appendixtocname}{Appendices}
+\renewcommand{\appendixpagename}{Appendices}
+
+\usepackage[hidelinks]{hyperref} %<--------ALTIJD ALS LAATSTE
