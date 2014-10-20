@@ -1,13 +1,10 @@
-%!TEX program=xelatex+makeindex+bibtex
-\documentclass[12pt]{scrreprt}
-
+%!TEX program = xelatex+makeindex+bibtex
+%!TEX spellcheck = en_GB
+\documentclass[final]{scrreprt} %scrreprt of scrartcl
 \input{../../library/preamble.tex}
 \input{../../library/style.tex}
-
-
+\addbibresource{../../library/bibliography.bib}
 \begin{document}
-
-
 \begin{titlepage}
 
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
@@ -77,8 +74,9 @@ Wendela \textsc{Huisman} MSc\\
 % 
 \vspace{3cm} %Tweak
 
-\textbf{Abstract} \\ 
-Example Abstract
+%TODO
+%\textbf{Abstract} \\ 
+%Abstract here
 
 
 \vfill % Fill the rest of the page with whitespace

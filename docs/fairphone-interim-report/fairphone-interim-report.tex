@@ -1,4 +1,5 @@
 %!TEX program=xelatex+makeindex+bibtex
+%!TEX spellcheck = en_GB
 \documentclass[final]{scrreprt} %scrreprt of scrartcl
 \input{../library/preamble.tex}
 \input{../library/style.tex}
@@ -14,26 +15,12 @@
 \newpage
 \pagenumbering{arabic}
 \subimport{introduction/}{introduction.tex}
-
-\newpage
-\subimport{week1/}{week1.tex}
-
-\newpage
-\subimport{week2/}{week2.tex}
-
-\newpage
-\subimport{week3/}{week3.tex}
-
-\newpage
-\subimport{week4/}{week4.tex}
-
-\newpage
-\subimport{week5/}{week5.tex}
-
-\newpage
-\subimport{week6/}{week6.tex}
-
-\newpage
+\subimport{breaking-experience/}{breaking-experience.tex}
+\subimport{initial-research/}{initial-research.tex}
+\subimport{diagnostics/}{diagnostics.tex}
+\subimport{trusted-distributors/}{trusted-distributors.tex}
+\subimport{transportation/}{transportation.tex}
+\subimport{repairing-experience/}{repairing-experience.tex}
 \pagenumbering{Roman}
 
 \printbibliography
