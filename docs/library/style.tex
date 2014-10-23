@@ -5,13 +5,16 @@
 \setmathfont{Asana Math}
 \setmonofont{Lucida Console}
 
-\usepackage{titlesec, blindtext, color}
 \definecolor{gray75}{gray}{0.75}
 \newcommand{\hsp}{\hspace{20pt}}
 \titleformat{\chapter}[hang]{\Huge\bfseries}{\chapternumber\hsp\textcolor{gray75}{|}\hsp}{0pt}{\Huge\bfseries}
 \renewcommand{\familydefault}{\sfdefault}
 \renewcommand{\arraystretch}{1.2}
 \setlength\parindent{0pt}
+\setlength{\parskip}{0.3cm plus4mm minus3mm}
+
+\pagestyle{fancy}
+\headsep = 8pt
 
 %For code listings
 \definecolor{black}{rgb}{0,0,0}
