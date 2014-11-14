@@ -1,0 +1,53 @@
+%!TEX program = xelatex+makeindex+bibtex
+%!TEX spellcheck = en_GB
+\documentclass[final]{scrreprt} %scrreprt of scrartcl
+\input{../../library/preamble.tex}
+\input{../../library/style.tex}
+\addbibresource{../../library/bibliography.bib}
+\begin{document}
+\chapter{Transportation} %TODO Lian Wouter
+\label{ch:transportation}
+
+This part was all about finding the most eco-friendly way of transporting the Fairphones.
+The most common used ways of shipment would be by aeroplane or by containership.
+The location from where the phones were being shipped was the first thing that needed to be clear. 
+The Fairphone website states that they have factories in Shenzhen and Chongqing. 
+Then the assumption was made that Shenzhen would be the place from where the phones would be shipped to Rotterdam. 
+A comparison would have to be made between the eco-impact of shipping by air and overseas.  
+
+To compare these two properly a unit of measurement was needed.
+This unit was chosen to be the amount of CO\textsubscript{2} emissions (in grams) per gram of product that needs to be transported.
+In order to calculate this properly the following information was needed:
+
+\begin{itemize}
+\item Air cargo container volume: \SI{4.32}{\cubic\meter}
+\item Air cargo maximum weight: \SI{2450}{\kilo\gram}
+\item Fairphone package dimensions: \SI{150}{\milli\meter} x \SI{90}{\milli\meter} x \SI{30}{\milli\meter}
+\item Fairphone weight with package: \SI{300}{\gram}
+\end{itemize}
+Then the assumption was made that the Fairphones would be shipped in batches of \num{8000} units, since there were \num{25000} units produced in total.
+
+Assumed was also that \SI{80}{\percent} of the \num{25000} units would be bought by Dutch and German customers and that the other \SI{20}{\percent} of the customers would be overseas.
+The population of Germany and the Netherlands are \num{80.6} and \num{16.8} million persons.
+Using this ratio it was calculated that approximately \num{16551} units needed to be shipped to Germany and \num{3448} units to the Netherlands. 
+
+The same location/inhabitant ratio was used the calculate the amount of devices that needed to be shipped to each city, for instance \num{20} units would be needed in Delft.
+
+When the average transport distance from Rotterdam to the city where the customer would be located was calculated the eco-impact could be calculated.
+ 
+The shipping by plane would result in an eco-impact of \SI{4.16}{\gram} of CO\textsubscript{2} per g of product being shipped.
+The shipping by containership would result in an eco-impact of \SI{0.44}{\gram} of CO\textsubscript{2} per g of product.
+
+These numbers showed that shipping your products by containership is a lot less harmful to the environment so this was chosen to be the method of transportation.
+
+Fairphone as a company, uses very a traditional way to transport their products. Shipping from China to the Netherlands by ship, then distributing from the Netherlands to the rest of the world. But there are things that can be changed in order to make it more eco-friendly. For instance, Fairphone packages their products here in the Netherlands, that means that all the product needs to arrive the Netherlands first and then distributed to the consumers. This might be the most traditional way, but not the most efficient way. If Fairphone can package their product in China right in the factory and figure out where the majority of the consumers are located, then the product can be directly shipped to the nearest location, saving the step of transporting to the Netherlands first. 
+
+Speaking purely from an eco-friendly point of view, why not try to make the phone within Europe. It is understood the fact that the labour costs are much lower in China, but on contrary, it is also much far away. Picking a place which has the capability of producing such product, lower labour cost and being much closed to the majority of the consumers will greatly reduce the eco-cost. 
+
+Implementing the TD system can also be much more eco-friendly. This will mainly work on the repair part. Parts can be directly shipped to different TD and then distributed through local network. This will allow Fairphone to reduce the transport needed to ship every item to a specific location. 
+
+Fairphone should also adapt to different environments and take advantage of that. For example, in the Netherlands, there are a lot of people who bike within the city, it’s not only more convenient, but much more eco-friendly. It could be a possibility to hire such worker in the local area to distribute the products using man power. 
+
+
+
+\end{document}

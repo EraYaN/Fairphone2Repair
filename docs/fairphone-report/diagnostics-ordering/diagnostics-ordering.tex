@@ -1,0 +1,40 @@
+%!TEX program = xelatex+makeindex+bibtex
+%!TEX spellcheck = en_GB
+\documentclass[final]{scrreprt} %scrreprt of scrartcl
+\input{../../library/preamble.tex}
+\input{../../library/style.tex}
+\addbibresource{../../library/bibliography.bib}
+\begin{document}
+\chapter{Diagnostics and Ordering} %TODO Erwin
+\label{ch:diagnostics-ordering}
+
+\section{Diagostics}
+Diagnosing the problem is a very important part of the process.
+This is the first experience the customers has with the system.
+
+The problem with diagnosing is that the phone is very complicated and a lot can go wrong.
+It is important to make sure that the customer does not have to deal with the complications.
+The way diagnostics are going to be done, is a two part strategy. Prevention is better than cure.
+
+\subsection{Part One: Prevention}
+The phone itself can constantly watch it's hardware and warn the user as soon as something might go wrong in the near feature, both in software and in hardware.
+Because Fairphone has full control over the software in the Fairphones, they can install the necessary software to accomplish this.
+The prevention system can use telemetry data gathering techniques to detect the health of the hardware.
+
+\subsection{Part Two: Cure}
+When something does unexpectedly go wrong and the phone still has it's basic functions.
+Then the software can present the user with the information the user need to remedy the problem.
+In the event that the hardware is no longer able to self-diagnose.
+We need an external device to run the diagnosis.
+This can be in the form of a computer or an other phone.
+This will plug seamlessly into the ordering system to give the user that best experience possible.
+After that the ordering system will handle everything up to delivery.
+
+\section{Ordering} %TODO Erwin
+The ordering system will get the information about the diagnosed problem.
+It will present the user with all the necessary information to complete the order and delivery.
+Of course it can then also optimise for the lowest eco impact.
+If the user is near a Trusted Distributor (see Chapter \ref{ch:trusted-distributors}) they can go and pick the part up, the store will tell them where the TD is and how to get there.
+If there is no stock near we can either restock a TD in the vicinity or ship the part directly to the customer.
+
+\end{document}
