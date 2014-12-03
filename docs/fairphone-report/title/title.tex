@@ -1,85 +1,63 @@
 %!TEX program = xelatex+makeindex+bibtex
 %!TEX spellcheck = en_GB
-\documentclass[final]{scrreprt} %scrreprt of scrartcl
+\documentclass[final,a4paper]{report} %scrreprt of scrartcl
 \input{../../library/preamble.tex}
 \input{../../library/style.tex}
 \addbibresource{../../library/bibliography.bib}
 \begin{document}
 \begin{titlepage}
 
-\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+\definecolor{headercolor}{cmyk}{1,.60,0,.40}
+\definecolor{subheadercolor}{cmyk}{.52,.32,0,0}
+\backgroundsetup{
+	scale=1, angle=0, opacity=1,
+	contents={
+		\begin{tikzpicture}[remember picture,overlay]
+ 			\path [fill=headercolor] (-0.5\paperwidth,6) rectangle (0.5\paperwidth,9.5);  
+ 			\path [fill=subheadercolor] (-0.5\paperwidth,4) rectangle (0.5\paperwidth,5.5);  
+		\end{tikzpicture}
+	}
+} \BgThispage
 
-\center % Center everything on the page
- 
-%----------------------------------------------------------------------------------------
-%	HEADING SECTIONS
-%----------------------------------------------------------------------------------------
+\newlength{\drop}
 
-\textsc{\LARGE Delft University of Technology}\\[1.5cm] % Name of your university/college
-\textsc{\Large IO3834 - Explore Lab}\\[0.5cm] % Major heading such as course name
-\textsc{\large Progress Report}\\[0.5cm] % Minor heading such as course title
+\begingroup
+	\sffamily
 
-%----------------------------------------------------------------------------------------
-%	TITLE SECTION
-%----------------------------------------------------------------------------------------
+	\drop=0.14\textheight
+	\vspace*{\drop}
+	\begin{flushright}
+		{\fontsize{1.5cm}{1em} \selectfont \color{white} Fairphone Repairability} \\
+		\vspace*{54pt}
+		{\fontsize{0.8cm}{1em} \selectfont Final Report}
 
-\HRule \\[0.4cm]
-\textsc{\huge \bfseries Fairphone Repairability Project}\\[0.2cm] % Title of your document
-\HRule \\[1.5cm]
- 
-%----------------------------------------------------------------------------------------
-%	AUTHOR SECTION
-%----------------------------------------------------------------------------------------
+		\vfill
 
-\begin{minipage}{0.45\textwidth}
-\begin{flushleft} \large
-\emph{Authors:}\\
-\begin{tabular}{ll}
-Erwin R. \textsc{de Haan} & 4222814\\
-Wouter L.W. \textsc{van den Hoed} & 4204964 \\
-Vincent C. \textsc{van 't Laar} & 4144481 \\
-Ronan E. \textsc{Wilde} & 4409973 \\
-Lian \textsc{Wu} & 4230558 \\
-\end{tabular}
+		{\fontsize{0.5cm}{1em} \selectfont
+			\normalfont
+			
+			\begin{tabular}{rr}
+				\multicolumn{2}{r}{Minor SDE Explore Labs} \\[0.5em]
+				\multicolumn{2}{r}{IO3834} \\[1.5em]	
+				Erwin R. {de Haan} & 4222814\\[0.5em]
+				Wouter L.W. {van den Hoed} & 4204964 \\[0.5em]
+				Vincent C. {van 't Laar} & 4144481 \\[0.5em]
+				Ronan E. {Wilde} & 4409973 \\[0.5em]
+				Lian {Wu} & 4230558 \\[1.5em]
+				\multicolumn{2}{r}{\today} \\
+			\end{tabular}
+			
+		}
+	\end{flushright}
+\endgroup
 
-\end{flushleft}
-\end{minipage}
-~
-\begin{minipage}{0.45\textwidth}
-\begin{flushright} \large
-\emph{Project Supervisiors:} \\
-\begin{tabular}{r}
-Dr.ir. Bas F. J. \textsc{Flipsen}\\
-Wendela \textsc{Huisman} MSc\\
-\end{tabular}
-\end{flushright}
-\end{minipage}\\[1.5cm]
+\begin{textblock}{16.1}(0,6)
+	\includegraphics[width=\linewidth]{resources/screw-it-render.jpg}
+\end{textblock}
 
-%\Large \emph{Author:}\\
-%John \textsc{Smith}\\[1.5cm] % Your name
-
-%----------------------------------------------------------------------------------------
-%	DATE SECTION
-%----------------------------------------------------------------------------------------
-
-{\large \today}\\ [1.5cm]
-
-%----------------------------------------------------------------------------------------
-%	LOGO SECTION
-%----------------------------------------------------------------------------------------
-
-%\includegraphics{Logo}\\ 
- 
-%----------------------------------------------------------------------------------------
-% 
-\vspace{3cm} %Tweak
-
-%TODO
-%\textbf{Abstract} \\ 
-%Abstract here
-
-
-\vfill % Fill the rest of the page with whitespace
+\begin{textblock}{16.1}(2.5,6.75)
+	%\includegraphics[width=0.175\linewidth,angle=270]{resources/screw-it-render.jpg}
+\end{textblock}
 
 \end{titlepage}
 \end{document}

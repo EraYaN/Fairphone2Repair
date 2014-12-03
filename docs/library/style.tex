@@ -5,16 +5,29 @@
 \setmathfont{Asana Math}
 \setmonofont{Lucida Console}
 
+
 \definecolor{gray75}{gray}{0.75}
+
+\fancypagestyle{plain}{%
+  \fancyhf{}    
+  \fancyfoot[L]{\small Chapter \thechapter}
+  \fancyfoot[C]{-- \thepage\ --}
+  \fancyfoot[R]{\small \today}
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0.4pt}
+}
+\pagestyle{plain}
+
 \newcommand{\hsp}{\hspace{20pt}}
 \titleformat{\chapter}[hang]{\Huge\bfseries}{\chapternumber\hsp\textcolor{gray75}{|}\hsp}{0pt}{\Huge\bfseries}
+\titlespacing{\chapter}{0pt}{0pt}{1pt}
 \renewcommand{\familydefault}{\sfdefault}
 \renewcommand{\arraystretch}{1.2}
+\setlength{\headheight}{0pt} 
 \setlength\parindent{0pt}
 \setlength{\parskip}{0.3cm plus4mm minus3mm}
 
 \pagestyle{plain}
-%\headsep = 8pt
 
 %For code listings
 \definecolor{black}{rgb}{0,0,0}

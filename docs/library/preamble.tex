@@ -1,9 +1,9 @@
 %!TEX program=xelatex+makeindex+bibtex
 % Include all project wide packages here.
-\usepackage{fullpage}
 \usepackage{polyglossia}
 \setmainlanguage{english}
-\usepackage{csquotes}
+\usepackage[strict,autostyle]{csquotes}
+\usepackage[svgnames]{xcolor}
 \usepackage{graphicx}
 \usepackage{epstopdf}
 \usepackage{pdfpages}
@@ -16,26 +16,31 @@
 \usepackage{wrapfig}
 \usepackage{authblk}
 \usepackage{array}
+\usepackage{multicol}
+\usepackage{multirow}
 \usepackage{booktabs}
 \usepackage[toc,page,title,titletoc]{appendix}
 \usepackage{xunicode}
 \usepackage{fontspec}
+\usepackage{tikz}
 \usepackage{pgfplots}
-\usepackage{SIunitx}
-\usepackage{units}
+\usepackage{siunitx}
 \usepackage[parfill]{parskip}
+\usepackage[pages=some]{background}
+\usepackage[absolute]{textpos}
+\usepackage{titlepic}
 \pgfplotsset{compat=newest}
 \pgfplotsset{plot coordinates/math parser=false}
 \newlength\figureheight 
 \newlength\figurewidth
-\usepackage{amsmath}
 \usepackage{mathtools}
 \usepackage{unicode-math}
 \usepackage{rotating}
 \usepackage{fancyhdr}
-\usepackage{titlesec}
+\usepackage[compact]{titlesec}
+\usepackage{enumitem}
+\usepackage{verbatim}
 \usepackage{blindtext}
-\usepackage{color}
 \usepackage[margin=3.5cm,headheight=35pt]{geometry}
 \usepackage[
     backend=bibtexu,
@@ -47,6 +52,7 @@ bibencoding=utf8,
 ]{biblatex}
 \usepackage{listings}
 \usepackage{wrapfig}
+\usepackage{fullpage}
 \newcommand{\includecode}[4][c]{\lstinputlisting[caption=#2, escapechar=, style=#1,label=#4]{#3}}
 \newcommand{\superscript}[1]{\ensuremath{^{\textrm{#1}}}}
 \newcommand{\subscript}[1]{\ensuremath{_{\textrm{#1}}}}
