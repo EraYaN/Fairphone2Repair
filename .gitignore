@@ -248,3 +248,6 @@ slprj
 *.mexw64
 *.autosave
 *.res
+
+#Dreamweaver
+dwsync.xml
