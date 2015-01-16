@@ -15,19 +15,23 @@ To give the card extra functionality, the decision was made to include the hardw
 To make this possible it is necessary to connect the phone to a computer (called a host) through the card. In this section, a description of how this system would work is provided, analysing the host side, the phone's side and finally the card itself with the appropriate components.
 
 \subsection{Host side}
-The choice was made to use a standard USB protocol to connect to the host through the card, since the phones uses the same method to connect to the grid to charge or to a computer to transfer files.
+The choice was made to use a standard USB protocol to connect to the host through the card, since the phones uses the same method to connect to the grid to charge or to a computer to communicate.
 The USB protocol offers more than enough bandwidth to accomplish the task.
-There will also be a small flash memory, for instance 1 gigabyte, within the card which will be usable like any USB stick and will contain the necessary software to run the diagnostics and a script to update the diagnostic software.
-The host will issue all the commands that need to be sent to the phone. The only thing the card's hardware does, is translate these to the correct signal on the phone side.
+There will also be a little bit of flash memory, for instance \SI{1}{\gibi\bit}, within the card which will be usable like any USB stick and will contain the necessary software to run the diagnostics and for example a script to update the diagnostic software.
+The host will issue all the commands that need to be sent to the phone. The only thing the card's hardware does, is translate these to the correct signals on the phone side.
+It will act like a transparent proxy who removes the excess USB protocol information from the packages so JTAG communication remains.
 
 \subsection{Phone side}
-To connect to the phones, a JTAG protocol (\textbf{Define JTAG}) was selected because nearly all IC's (\textbf{Define IC}) these days have a JTAG protocol interface.
-The most important part the ARM (\textbf{Define ARM}) based SoC (\textbf{Define SoC}) has a very well specified JTAG specification.
-\textbf{The cool thing with JTAG is that you can daisy chain all the different IC's on the same bus. \underline{????}}
+%TODO Define JTAG, IC
+To connect to the phones, a JTAG protocol was selected because nearly all IC's these days have a JTAG protocol interface.
+%TODO Define ARM? (really?), SoC
+The most important part the ARM based SoC (System-on-a-Chip) used in the phone, has a very well specified JTAG specification.
+%TODO Define daisy chain? bus?
+The cool thing with JTAG is that you can daisy chain all the different IC's on the same bus.
 Originally, JTAG was meant to be a way to test printed circuit board using boundary scan, however nowadays many manufacturers have extended their JTAG implementation to add debug information and for example ROM or flash programming functions.
 This tool can even be used instead of a very expensive JTAG debugger in the actual development of the phone.
 
-\subsection{The card's components}
+\subsection{Components}
 \begin{table}[h]
 	\centering
 	\caption{MCU STM32F103R4H6A}

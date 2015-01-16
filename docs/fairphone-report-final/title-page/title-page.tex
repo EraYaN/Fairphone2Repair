@@ -1,41 +1,63 @@
-% !TeX spellcheck = en_GB
-% !TEX program = xelatex+makeindex+bibtex
-\documentclass[final,a4paper]{report}
+%!TEX program = xelatex+makeindex+bibtex
+%!TEX spellcheck = en_GB
+\documentclass[final,a4paper]{report} %scrreprt of scrartcl
 \input{../../library/preamble.tex}
 \input{../../library/style.tex}
 \addbibresource{../../library/bibliography.bib}
-\author{Fairphone Repair Group}
-\title{Fairphone Repairability}
-\date{\today}
 \begin{document}
 \begin{titlepage}
-\begin{center}
-\textsc{\LARGE Delft University of Technology }\\[0.3cm]
-\textsc{\Large Minor Sustainable Design and Engineering}\\[0.5cm]
 
-\rule{\linewidth}{0.04cm} \\[0.4cm]
-{\LARGE \bfseries Final Report Fairphone (Repair Group)\\[0.2cm]}
-{\large \bfseries IO3438 - Explore Lab}\\ \vspace{5mm}
-Date: \today \\
-\rule{\linewidth}{0.04cm} \\[0.9cm]
+\definecolor{headercolor}{cmyk}{1,.60,0,.40}
+\definecolor{subheadercolor}{cmyk}{.52,.32,0,0}
+\backgroundsetup{
+	scale=1, angle=0, opacity=1,
+	contents={
+		\begin{tikzpicture}[remember picture,overlay]
+ 			\path [fill=headercolor] (-0.5\paperwidth,6) rectangle (0.5\paperwidth,9.5);  
+ 			\path [fill=subheadercolor] (-0.5\paperwidth,4) rectangle (0.5\paperwidth,5.5);  
+		\end{tikzpicture}
+	}
+} \BgThispage
 
-\vspace{50 mm}
+\newlength{\drop}
 
-\begin{table}[H]
-\centering
-\begin{tabular}{| l l c}
-\textbf{Surname} & \textbf{Name} & \textbf{Stud. Number} \\
-de Haan & Erwin R.& 4222814 \\
-van den Hoed & Wouter L.W. & 4204964 \\
-van 't Laar & Vincent C. & 4144481 \\
-Wilde & Ronan E.& 4409973 \\
-Wu & Lian & 4230558 \\
+\begingroup
+	\sffamily
 
-\end{tabular}
-\end{table}
+	\drop=0.14\textheight
+	\vspace*{\drop}
+	\begin{flushright}
+		{\fontsize{1.5cm}{1em} \selectfont \color{white} Fairphone Repairability} \\
+		\vspace*{54pt}
+		{\fontsize{0.8cm}{1em} \selectfont Final Report}
 
+		\vfill
 
+		{\fontsize{0.5cm}{1em} \selectfont
+			\normalfont
+			
+			\begin{tabular}{rr}
+				\multicolumn{2}{r}{Minor SDE Explore Labs} \\[0.5em]
+				\multicolumn{2}{r}{IO3834} \\[1.5em]	
+				Erwin R. {de Haan} & 4222814\\[0.5em]
+				Wouter L.W. {van den Hoed} & 4204964 \\[0.5em]
+				Vincent C. {van 't Laar} & 4144481 \\[0.5em]
+				Ronan E. {Wilde} & 4409973 \\[0.5em]
+				Lian {Wu} & 4230558 \\[1.5em]
+				\multicolumn{2}{r}{\today} \\
+			\end{tabular}
+			
+		}
+	\end{flushright}
+\endgroup
 
-\end{center}
+\begin{textblock}{16.1}(0,6)
+	\includegraphics[width=\linewidth]{resources/screw-it-render.jpg}
+\end{textblock}
+
+\begin{textblock}{16.1}(2.5,6.75)
+	%\includegraphics[width=0.175\linewidth,angle=270]{resources/screw-it-render.jpg}
+\end{textblock}
+
 \end{titlepage}
 \end{document}
