@@ -1,0 +1,21 @@
+% !TeX spellcheck = en_GB
+% !TEX program = xelatex+makeindex+bibtex
+% !TeX TXS-program:pdflatex = txs:///xelatex %
+\documentclass[final,a4paper]{report} %scrreprt of scrartcl
+\input{../../../library/preamble.tex}
+\input{../../../library/style.tex}
+\addbibresource{../../../library/bibliography.bib}
+\author{Fairphone Repair Group}
+\title{Fairphone Repairability}
+\date{\today}
+\begin{document}
+	\section{Repairing and Restocking}
+	\label{sec:td-repairing}
+	Once the customers have diagnosed and ordered the new component, a connection is established between the customer and the TD of interest. As mentioned in section~\ref{sec:storyboard-meeting} the contacting method is quite flexible. It can go through the built-in application chat, calling, e-mail or the forum. This mainly depends on the method the customer prefers or is able to do (broken screen or microphone for instance will hinder some communication methods).
+	
+	Once a meeting has been arranged, three options become available, and have been explained in section \ref{sec:storyboard-meeting} and depicted in figure \ref{fig:PaymentFlowChart}.
+	
+	This method ensures that the phone can be fixed within the day, and rules out waiting periods for shipment or sending the phone away. This will definitely improve the repair experience, and in our group project's opinion, worth looking more into.
+	
+	When the customers order the component, it is not delivered to them unless it is necessary (in which case payment occurs before delivery). Instead, it will be delivered to the TD that will help the customer. This is an important part of the process since it allows the customer in need to have the new component possibly within the same day. The part the customer ordered will arrive a few days or weeks later (depending on the postal system) and will serve as the TDs restock so that he has a complete set again, and is ready to help a Fairphone user in need. The TD will also send back the broken or outdated component to Fairphone in the package the new component arrives with the purpose of fixing or recycling depending on the damage.
+\end{document}

@@ -1,0 +1,56 @@
+% !TeX spellcheck = en_GB
+% !TEX program = xelatex+makeindex+bibtex
+% !TeX TXS-program:pdflatex = txs:///xelatex %
+\documentclass[final,a4paper]{report} %scrreprt of scrartcl
+\input{../../library/preamble.tex}
+\input{../../library/style.tex}
+\addbibresource{../../library/bibliography.bib}
+\author{Fairphone Repair Group}
+\title{Fairphone Repairability}
+\date{\today}
+\begin{document}
+	\chapter{SCRW-It}
+	\label{ch:scrw-it}
+	The second product the team decided to develop is not the main product. In fact, it is actually more of a gadget. The product is the size of a credit card, and serves as a business card, Fairphone membership badge, diagnosing and repairing tool. 
+	
+	The first step in designing the card, was making a list of requirements:
+	\begin{enumerate}
+		\item Must fit in a walled
+		\item Must have \#000 Philips screwdriver
+		\item Must be identifiable as a Fairphone product and serve as a membership badge
+		\item Must be able to encase diagnosing hardware
+	\end{enumerate}
+	
+	\section{The first design}
+	\label{sec:scrw-it-first-design}
+	
+	The first design phase served to make sure requirements 1 to 3 were met. It wasn't certain whether it was possible to meet requirements 1 and 4, since more research was required before anything could be said about it (Section \ref{sec:scrw-it-hardware}). 
+	
+	Figure \ref{fig:CardExteriorDesign} shows the exterior of the card. It has a logo similar to Fairphone's, but instead of the star it pictures an open end wrench symbolizing the repairing function it provides. The figure also shows a narrow detachable section with two screwdrivers (one the required Philips and the other a slot, torx or any type of screwdriver Fairphone chooses to provide) attached to it. The screwdrivers give the product its name: the SCRW-It. This is meant to be funny to lighten the user with the broken phone's mood while he repairs his phone\footnote{The screwdrivers in the prototype are a lot larger than they are supposed to be because the prototype is 3D printed whereas the real product would have a different production method and have steel screwdrivers of the correct size.}. 
+	
+	The previously mentioned component is made of aluminium for light weight and sufficient torquing strength for unscrewing the tiny screws. It is detachable from the rest of the card for ergonomic reasons and to avoid cracking in the plastic part of the card.
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.8\textwidth]{resources/CardDesign1}
+		\caption{Card exterior design}
+		\label{fig:CardExteriorDesign}
+	\end{figure}
+	
+	Figure \ref{fig:CardExteriorDesign} also shows a slot on the lower right side. This part is better explained in figure \ref{fig:CardInteriorDesign} where the inside is visible. The black component serves as a USB drive and a force pin to detach the aluminium part from the rest of the card. It can in fact be slid in three directions: left to access the USB drive which will stick out of the side of the card, up to detach the screwdrivers and right to lock the card when it is not in use. 
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.8\textwidth]{resources/CardDesign2}
+		\caption{Card interior design}
+		\label{fig:CardInteriorDesign}
+	\end{figure}
+	
+	This first design was made in case requirements 1 and 4 could not be met in the same product, which would have resulted in the removal of the fourth requirement. However, it was possible to meet all requirements and thus bring forward a new design (Section \ref{sec:scrw-it-hardware}).
+	
+	\subimport{user-testing/}{user-testing.tex}
+	\subimport{feedback/}{feedback.tex}
+	\subimport{improvements/}{improvements.tex}
+	\subimport{hardware/}{hardware.tex}
+\end{document}
+

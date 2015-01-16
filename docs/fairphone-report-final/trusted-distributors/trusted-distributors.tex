@@ -1,0 +1,20 @@
+% !TeX spellcheck = en_GB
+% !TEX program = xelatex+makeindex+bibtex
+% !TeX TXS-program:pdflatex = txs:///xelatex %
+\documentclass[final,a4paper]{report} %scrreprt of scrartcl
+\input{../../library/preamble.tex}
+\input{../../library/style.tex}
+\addbibresource{../../library/bibliography.bib}
+\author{Fairphone Repair Group}
+\title{Fairphone Repairability}
+\date{\today}
+\begin{document}
+	\chapter{Trusted Distributors}\label{ch:trusted-distributors}
+	This section describes a system that has been developed in order to reduce storage costs, increase repair efficiency (speed) and make volunteer customers valuable members of the Fairphone society. This system goes hand in hand with the (discontinued) FairPoint system (chapter \ref{ch:fairpoints}). This system was elaborated to a certain extent before it was decided to discontinue it. There will therefore not be a business plan or testing for the Trusted Distributors. The reason it has been discontinued is because at a certain point during the project it became clear that the end result had to be a product which could be tested on users as a learning experience. However, so much had been done w.r.t. the TD system that the group did not want to discard it. It is a potential new way of interacting with customers.
+	
+	To improve the distribution system, the inclusion of the customers in the process was the most preferred option as a result of many mind-mapping sessions in the beginning of the project. This section describes how this would be potentially be possible.
+	
+	\subimport{becoming-td/}{becoming-td.tex}
+	\subimport{td-regulations/}{td-regulations.tex}
+	\subimport{repairing/}{repairing.tex}
+\end{document}

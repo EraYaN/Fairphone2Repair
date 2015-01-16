@@ -1,0 +1,23 @@
+% !TeX spellcheck = en_GB
+% !TEX program = xelatex+makeindex+bibtex
+% !TeX TXS-program:pdflatex = txs:///xelatex %
+\documentclass[final,a4paper]{report} %scrreprt of scrartcl
+\input{../../library/preamble.tex}
+\input{../../library/style.tex}
+\addbibresource{../../library/bibliography.bib}
+\author{Fairphone Repair Group}
+\title{Fairphone Repairability}
+\date{\today}
+\begin{document}
+	\chapter{Diagnostic application}
+	\label{ch:diagnostic-application}
+	The main reason the application was not taken forward is because diagnosing a phone is very complicated and a lot can go wrong. This is especially true if nothing is know about the phone itself. If there is to be a diagnosing application, Fairphone will have to develop it since they know their phone the best.
+	
+	\section{Prevention}
+	\label{sec:diagnostic-application-prevention}
+	The phone itself can constantly watch it's hardware and warn the user as soon as something might go wrong in the near feature, both in software and in hardware. Because Fairphone has full control over the software in the Fairphones, they can install the necessary software to accomplish this. The prevention system can use telemetry data gathering techniques to detect the health of the hardware.
+	
+	\section{Cure}
+	\label{sec:diagnostic-application-cure}
+	When something does unexpectedly go wrong and the phone still has it's basic functions. Then the software can present the user with the information the user need to remedy the problem. In the event that the hardware is no longer able to self-diagnose. We need an external device to run the diagnosis. This can be in the form of a computer or an other phone. This will plug seamlessly into the ordering system to give the user that best experience possible. After that the ordering system will handle everything up to delivery.
+\end{document}

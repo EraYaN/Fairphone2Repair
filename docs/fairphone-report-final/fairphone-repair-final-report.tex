@@ -1,0 +1,45 @@
+% !TeX spellcheck = en_GB
+% !TEX program = xelatex+makeindex+bibtex
+% !TeX TXS-program:pdflatex = txs:///xelatex %
+\documentclass[final,a4paper]{report} %scrreprt of scrartcl
+\input{../library/preamble.tex}
+\input{../library/style.tex}
+\addbibresource{../library/bibliography.bib}
+\author{Fairphone Repair Group}
+\title{Fairphone Repairability}
+\date{\today}
+\begin{document}
+\pagenumbering{roman}
+\subimport{title-page/}{title-page.tex}
+\newpage
+\tableofcontents
+
+\newpage
+\pagenumbering{arabic}
+\subimport{introduction/}{introduction.tex}
+
+\subimport{storyboard/}{storyboard.tex}
+
+\subimport{trusted-distributors/}{trusted-distributors.tex}
+
+\subimport{prototyping/}{prototyping.tex}
+
+\subimport{packaging/}{packaging.tex}
+
+\subimport{scrw-it/}{scrw-it.tex}
+
+\subimport{fairpoints/}{fairpoints.tex}
+
+\subimport{diagnostic-application/}{diagnostic-application.tex}
+
+\subimport{ecoptimizer/}{ecoptimizer.tex}
+
+\subimport{business-plan/}{business-plan.tex}
+
+\clearpage
+
+\pagenumbering{Roman}
+\printbibliography[heading=bibintoc]
+
+%\subimport{appendices/}{appendices.tex}
+\end{document}

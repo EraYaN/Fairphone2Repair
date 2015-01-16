@@ -1,0 +1,23 @@
+% !TeX spellcheck = en_GB
+% !TEX program = xelatex+makeindex+bibtex
+% !TeX TXS-program:pdflatex = txs:///xelatex %
+\documentclass[final,a4paper]{report} %scrreprt of scrartcl
+\input{../../../library/preamble.tex}
+\input{../../../library/style.tex}
+\addbibresource{../../../library/bibliography.bib}
+\author{Fairphone Repair Group}
+\title{Fairphone Repairability}
+\date{\today}
+\begin{document}
+	\section{Payment}\label{sec:storyboard-payment}
+	The payment is performed through the application. After ordering the new component, it will be sent to a TD. The TD's information will be stored and he will be registered as current holder of the unpaid part (section \ref{sec:td-regulations}). 
+	
+	The fee will be charged to the owner of the phone with which ever payment method they prefer. They will redirect to a payment page, iDeal or Credit Card for instance. What needs to be noted, is that there will be different payment protocols since there are different ways a component can be delivered to he customer. For this, a payment flowchart has been made (Figure \ref{fig:PaymentFlowChart}) 
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.8\textwidth]{resources/PaymentFlowChart}
+		\caption{Payment Flowchart}
+		\label{fig:PaymentFlowChart}
+	\end{figure}
+\end{document}

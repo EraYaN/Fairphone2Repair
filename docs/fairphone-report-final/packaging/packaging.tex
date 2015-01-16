@@ -1,0 +1,75 @@
+% !TeX spellcheck = en_GB
+% !TEX program = xelatex+makeindex+bibtex
+% !TeX TXS-program:pdflatex = txs:///xelatex %
+\documentclass[final,a4paper]{report} %scrreprt of scrartcl
+\input{../../library/preamble.tex}
+\input{../../library/style.tex}
+\addbibresource{../../library/bibliography.bib}
+\author{Fairphone Repair Group}
+\title{Fairphone Repairability}
+\date{\today}
+\begin{document}
+	\chapter{Packaging}
+	\label{ch:packaging}
+	Nowadays, all phones are delivered in their luxurious packages which unfortunately serve no purpose after the delivery. Usually, they are either thrown away (hopefully through recycling) or left forgotten in a drawer or closet to be found again years later to be disposed. The team thought that this element had a lot of room for improvement, and started to think about a way to make the packaging useful even after delivery. The idea came to use it in the process of repairing, facilitating the DIY experience of the user. 
+	
+	The first packaging design was inspired by a repair mat. A repair mat is divided into several sections which can each hold different specific components for an better visual organisation. Keeping everything as simple as possible and providing the means to easily repair a phone are the key elements to improving the DIY repair experience of the user. To incorporate this idea into the packaging, a design was created which can be seen in figure \ref{fig:Box design 1}. The purpose of the slots is to use them as trays to know exactly what component/module/screw goes where and in what order it was taken apart. 
+	
+	As an important note, the sketch presented is not accurate. It is in fact not even designed to the Fairphone 2 since the order of disassembly of the modules is unknown, just like the size of every module. The sketch serves purely as a visual aid of what the team intends to achieve.
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.8\textwidth]{resources/BoxDesign1}
+		\caption{The first re-design of the Fairphone 2 packaging}
+		\label{fig:Box design 1}
+	\end{figure}
+	
+	When the first design was brought to life through a prototype, it was clear pretty quickly that it wasn't the right way to go. In fact, it proved to be a very weak structure layout and would not be able to protect the phone during shipment, or even promise to last longer than a few repair sessions. The weakness of the box was mostly due all the parts that were folded and taped together. The first prototype can be seen in figure \ref{fig:Prototype of box design 1}. To make this more complex design stronger, stiffer and more polluting materials would be required, compromising Fairphones awareness-raising image.
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.8\textwidth]{resources/BoxPrototype1}
+		\caption{Prototype of the first packaging redesign}
+		\label{fig:Prototype of box design 1}
+	\end{figure}
+	
+	Since the first design was discarded after creating the prototype, a second design originated. It was decided to maintain a stiff casing structure as is seen in most phone packaging designs, and implement a tray system. Instead of having the repair mat fold out of the box, different trays (coined as ``layers'') with appropriate slots were designed. This can better be seen in figure \ref{fig:Box design 2}. The layers are provided with a lip, which serves as a handle to remove it from the main box.
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.8\textwidth]{resources/BoxDesign2}
+		\caption{The second re-design of the Fairphone 2 packaging}
+		\label{fig:Box design 2}
+	\end{figure}
+	
+	Before prototyping this design, better quality low impact materials were acquired from the architecture faculty. Using these materials the new prototype was created. The result can be seen in figure \ref{fig:Prototype of box design 2}.
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.8\textwidth]{resources/BoxPrototype21}
+		\caption{Prototype of the first packaging redesign}
+		\label{fig:Prototype of box design 2}
+	\end{figure}
+	
+	Since the prototype served its function well, aesthetics were taken into consideration. Plain white revealed to be boring, and made it look fragile. In fact, it looked like it was made of simple paper. To make the packaging appear more elaborated and stronger, some cork details were added to the prototype to make it look and feel fairer as can be seen in figure \ref{fig:Prototype of box design 2 with cork details}.
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.8\textwidth]{resources/BoxPrototype22}
+		\caption{Prototype of the second packaging redesign with cork details}
+		\label{fig:Prototype of box design 2 with cork details}
+	\end{figure}
+	
+	Even tough the second version of the second design was appreciated by the team, it was decided to make the layers entirely out of cork. This choice was made because cork is a lower grade material, and is strong enough to serve as a repair mat. This enhances the ``fair experience'' Fairphone so much strives for. This final prototype is also the one that will be used for the user testing of the product.
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.8\textwidth]{resources/BoxPrototype23}
+		\caption{Prototype of the second packaging redesign with full cork layers}
+		\label{fig:Prototype of box design 2 with full cork exterior}
+	\end{figure}  
+
+	\subimport{user-testing/}{user-testing.tex}
+	\subimport{feedback/}{feedback.tex}
+	\subimport{improvements/}{improvements.tex}
+\end{document}

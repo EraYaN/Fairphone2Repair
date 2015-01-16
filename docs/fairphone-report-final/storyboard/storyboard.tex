@@ -1,0 +1,21 @@
+% !TeX spellcheck = en_GB
+% !TEX program = xelatex+makeindex+bibtex
+% !TeX TXS-program:pdflatex = txs:///xelatex %
+\documentclass[final,a4paper]{report} %scrreprt of scrartcl
+\input{../../library/preamble.tex}
+\input{../../library/style.tex}
+\addbibresource{../../library/bibliography.bib}
+\author{Fairphone Repair Group}
+\title{Fairphone Repairability}
+\date{\today}
+\begin{document}
+	\chapter{Storyboard}
+	\label{ch:storyboard}
+	The starting point of the project is a customer with a broken product, and obviously, they all want the same thing: a fast, economic and possibly fun way to repair the phone. This process should possible for everyone, therefore three scenario people have been made up: Peter, Margaret and Simon.
+	
+	\subimport{personas/}{personas.tex}
+	\subimport{ordering/}{ordering.tex}
+	\subimport{payment/}{payment.tex}
+	\subimport{meeting/}{meeting.tex}
+	\subimport{repairing/}{repairing.tex}
+\end{document}
